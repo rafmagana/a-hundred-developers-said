@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="game">
+
+      <div id="title">
+        100 developers said
+      </div>
+
+      <div id="panel">
+
+        <div id="current-question-points" class="score">0</div>
+
+        <div class="left">
+          <div id="team-1-points" class="score">0</div>
+        </div>
+
+        <div class="right">
+          <div id="team-2-points" class="score">0</div>
+        </div>
+
+        <div class="center">
+          <div id="current-question">
+            <div id="question"></div>
+            <div id="answers"></div>
+          </div> <!-- current-question -->
+
+          <div id="strikes">
+            <div id="strike-1" class="strike"><div class="hide">X</div></div>
+            <div id="strike-2" class="strike"><div class="hide">X</div></div>
+            <div id="strike-3" class="strike"><div class="hide">X</div></div>
+          </div> <!-- strikes -->
+
+        </div> <!-- center -->
+      </div> <!-- panel -->
+
+      <audio id="strike-sound" src="audio/strike.mp3"></audio>
+      <audio id="suspense-sound" src="audio/suspense.mp3"></audio>
+      <audio id="show-answer-sound" src="audio/show-answer.wav"></audio>
+      <audio id="lost-round-sound" src="audio/lost-round.wav"></audio>
+      <audio id="more-specific-answer-sound" src="audio/more-specific-answer.wav"></audio>
+    </div> <!-- game -->
+
+    <!-- Templates -->
+    <template id="answer-template">
+      <div class="answer">
+        <div class="hide">
+          <div class="text">text</div>
+          <div class="points">points</div>
+        </div>
+      </div>
+    </template>
+
+    <script src="lib/data.js"></script>
+    <script src="lib/helpers.js"></script>
+    <script src="lib/round.js" ></script>
+    <script src="lib/sound.js" ></script>
+    <script src="lib/game.js" ></script>
+  </body>
+</html>

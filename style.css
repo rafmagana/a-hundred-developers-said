@@ -1,0 +1,136 @@
+body {
+  background-color: white;
+  padding: 50px;
+}
+
+#game {}
+
+#panel {
+  width: 100%;
+  min-width: 970px;
+  margin:0 auto;
+  border: 1px solid #0000;
+}
+
+.left {
+  float: left;
+  width: 150px;
+}
+
+.center {
+  margin-left: 160px;
+  margin-right: 150px;
+}
+
+.right {
+  float: right;
+  width: 150px;
+}
+
+#title {
+  font-weight:bold;
+  font-size:5em;
+  text-align:center;
+  vertical-align: middle;
+}
+
+.score {
+  color:#FFFEFA;
+  padding: 5px;
+  border-radius: 20px 20px 20px 20px;
+  border: 0px solid #000000;
+  width: 150px;
+
+  background: rgba(31,59,8,1);
+  background: -moz-linear-gradient(top, rgba(31,59,8,1) 0%, rgba(98,125,77,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(31,59,8,1)), color-stop(100%, rgba(98,125,77,1)));
+  background: -webkit-linear-gradient(top, rgba(31,59,8,1) 0%, rgba(98,125,77,1) 100%);
+  background: -o-linear-gradient(top, rgba(31,59,8,1) 0%, rgba(98,125,77,1) 100%);
+  background: -ms-linear-gradient(top, rgba(31,59,8,1) 0%, rgba(98,125,77,1) 100%);
+  background: linear-gradient(to bottom, rgba(31,59,8,1) 0%, rgba(98,125,77,1) 100%);
+
+  text-shadow:1px 1px 6px rgba(255,255,0,0.3);
+  font-weight:bold;
+  font-size:5em;
+  text-align:center;
+  vertical-align: middle;
+  font-family:helvetica, sans-serif;
+}
+
+#current-question-points {
+  margin: auto;
+}
+
+#current-question {
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+#current-question #question {
+  padding: 10px;
+  border: 1px solid #000000;
+
+  font-weight:bold;
+  font-size:1.8em;
+  vertical-align: middle;
+  font-family:helvetica, sans-serif;
+}
+
+#current-question #answers{
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+#current-question #answers .answer {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 60px;
+  border: 3px solid #000000;
+  background-color: blue;
+
+  font-weight:bold;
+  font-size:3em;
+  color: white;
+  vertical-align: middle;
+  font-family:helvetica, sans-serif;
+}
+
+#current-question #answers .answer .text{
+  padding: 2px;
+  float: left;
+}
+
+#current-question #answers .answer .points{
+  float: right;
+  padding-left: 2px;
+  border: 3px solid #000000;
+}
+
+.hide {
+  visibility: hidden;
+  display: none;
+}
+
+#strikes {
+  border: 1px solid #000;
+  height: 95px;
+}
+
+#strikes .strike {
+  float: left;
+  border: 1px solid #000000;
+  min-width: 60px;
+  min-height: 60px;
+  margin: 10px;
+}
+
+#strikes .strike div {
+  background-color: #FFFFFF;
+  color: #FF0000;
+  font-family: 'arial black';
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: 2px 2px 2px #800000;
+}
