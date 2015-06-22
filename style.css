@@ -5,11 +5,11 @@
 .row { max-width: 100%; }
 
 #current-question-points{
-  font-size: 2em;
+  font-size: 4em;
 }
 
 #team-1-points.score, #team-2-points.score{
-  font-size: 1.4em;
+  font-size: 8em;
 }
 
 #current-question {
